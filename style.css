@@ -1,0 +1,961 @@
+/* Обнуление */
+
+@import url("https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css");
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Общие стили */
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.wrapper {
+  max-width: 1920px;
+}
+
+.conteiner {
+  max-width: 870px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.conteiner__aboutUs {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.conteiner__public {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.conteiner__benefits {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Шрифти */
+
+@font-face {
+  font-family: "Abbey";
+  src: url("./fonts/Abbey-Rgl.eot");
+  src: local("Abbey-Regular"), local("Abbey-Rgl"), url("./fonts/Abbey-Rgl.eot?#iefix") format("embedded-opentype"), url("./fonts/Abbey-Rgl.woff2") format("woff2"), url("./fonts/Abbey-Rgl.woff") format("woff"), url("./fonts/Abbey-Rgl.ttf") format("truetype"), url("./fonts/Abbey-Rgl.svg#Abbey-Rgl") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("./fonts/CenturyGothic-Bold.eot");
+  src: local("Century Gothic Bold"), local("CenturyGothic-Bold"), url("./fonts/CenturyGothic-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/CenturyGothic-Bold.woff2") format("woff2"), url("./fonts/CenturyGothic-Bold.woff") format("woff"), url("./fonts/CenturyGothic-Bold.ttf") format("truetype"), url("./fonts/CenturyGothic-Bold.svg#CenturyGothic-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Century Gothic";
+  src: url("./fonts/CenturyGothic.eot");
+  src: local("Century Gothic"), local("CenturyGothic"), url("./fonts/CenturyGothic.eot?#iefix") format("embedded-opentype"), url("./fonts/CenturyGothic.woff2") format("woff2"), url("./fonts/CenturyGothic.woff") format("woff"), url("./fonts/CenturyGothic.ttf") format("truetype"), url("./fonts/CenturyGothic.svg#CenturyGothic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cocon";
+  src: url("./fonts/Cocon-Bold.eot");
+  src: local("Cocon Bold"), local("Cocon-Bold"), url("./fonts/Cocon-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/Cocon-Bold.woff2") format("woff2"), url("./fonts/Cocon-Bold.woff") format("woff"), url("./fonts/Cocon-Bold.ttf") format("truetype"), url("./fonts/Cocon-Bold.svg#Cocon-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Первая секция */
+
+.main-block {
+  background-image: url(./img/bg-image.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 40px 0 220px 0;
+}
+
+.main-block__title {
+  max-width: 290px;
+  font-family: "abbey";
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 81px;
+  text-align: right;
+  color: #FAFAFA;
+  margin: 323px 0 0 579px;
+}
+
+/* Хедер */
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__li:not(:last-child) {
+  margin-right: 70px;
+}
+
+.header__link {
+  color: #fafafa;
+  font-family: "Century Gothic";
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 46.02px;
+  text-align: right;
+  text-decoration: none;
+}
+
+/* Вторая секция */
+
+.aboutUs {
+  padding: 90px 0 172px 0;
+}
+
+.aboutUs__subtitle {
+  color: #99b258;
+  font-family: "Century Gothic";
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 46px;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 85px;
+}
+
+.aboutUs__block {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.aboutUs__item {
+  max-width: 660px;
+}
+
+.aboutUs__quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0 0 40px 35px;
+}
+
+.aboutUs__icon {
+  margin-right: 38px;
+}
+
+.aboutUs__text {
+  color: #2c2c2c;
+  font-family: "Century Gothic";
+  font-size: 26px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 39.83px;
+  text-align: left;
+}
+
+.aboutUs__title {
+  width: 400px;
+  height: 285px;
+  font-family: "Cocon";
+  font-size: 127.6px;
+  line-height: 191px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #99b258;
+  text-align: right;
+  margin: 120px 0 0 0;
+}
+
+.aboutUs__title--word {
+  font-size: 191.4px;
+}
+
+/* Третяя секция */
+
+.public {
+  background-color: #79ac47;
+  padding: 90px 0 180px 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.public__img {
+  margin-right: 70px;
+}
+
+.public__logo {
+  margin: 0 0 140px 158px;
+}
+
+.public__title {
+  max-width: 456px;
+  font-family: "Cocon";
+  font-size: 150px;
+  line-height: 150px;
+  font-weight: 700;
+  color: #fafafa;
+}
+
+.public__title--word {
+  font-size: 200px;
+  line-height: 200px;
+}
+
+.public__item {
+  margin-top: 240px;
+  max-width: 570px;
+}
+
+.public__quote {
+  margin-bottom: 25px;
+}
+
+.public__text {
+  font-family: "century gothic";
+  font-size: 23px;
+  text-align: left;
+  color: #FAFAFA;
+}
+
+/* Четвертая секция */
+
+.contacts {
+  background-image: url("./img/bg-image_1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 53px 0 255px 0;
+}
+
+.contacts__block {
+  max-width: 320px;
+}
+
+.contacts__title,
+.contacts__subtitle,
+.contacts__telephone {
+  color: #2a292a;
+  font-family: "Century Gothic";
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: normal;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+/* Пятая секция */
+
+.benefits {
+  background: center no-repeat url("./img/bg-image_2.png");
+  padding: 85px 0 137px 0;
+}
+
+.benefits__title {
+  font-family: "Cocon";
+  font-size: 100px;
+  line-height: 120px;
+  font-weight: 700;
+  color: #866c9f;
+  text-align: center;
+}
+
+.benefits__block {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+}
+
+.benefits__flex {
+  margin-top: 25px;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+}
+
+.benefits__item--lead {
+  text-align: right;
+  translate: -150px;
+}
+
+.benefits__icon-lead {
+  margin-bottom: 20px;
+  translate: -45px;
+}
+
+.benefits__subtitle-lead,
+.benefits__text-lead {
+  max-width: 290px;
+  font-family: "century gothic";
+  font-size: 16px;
+  text-align: right;
+  color: #373737;
+}
+
+.benefits__subtitle-lead {
+  font-weight: bold;
+}
+
+.benefits__item--text {
+  text-align: left;
+  translate: 150px;
+}
+
+.benefits__icon-text {
+  margin-bottom: 20px;
+  translate: 45px;
+}
+
+.benefits__subtitle-text,
+.benefits__text-text {
+  max-width: 275px;
+  font-family: "century gothic";
+  font-size: 16px;
+  color: #373737;
+}
+
+.benefits__subtitle-text {
+  font-weight: bold;
+}
+
+.benefits__item--copy {
+  translate: -15px;
+}
+
+.benefits__icon-copy {
+  margin-bottom: 15px;
+}
+
+.benefits__subtitle-copy {
+  max-width: 247px;
+  font-family: "century gothic";
+  font-size: 16px;
+  color: #373737;
+  font-weight: bold;
+}
+
+.benefits__item--desc {
+  text-align: left;
+  translate: 110px;
+}
+
+.benefits__icon-desc {
+  margin-bottom: 15px;
+  translate: 75px;
+}
+
+.benefits__subtitle-desc,
+.benefits__text-desc {
+  max-width: 330px;
+  font-family: "century gothic";
+  font-size: 16px;
+  color: #373737;
+}
+
+.benefits__subtitle-desc {
+  font-weight: bold;
+}
+
+.benefits__item--inner {
+  translate: 34px 5px;
+}
+
+.benefits__icon-inner {
+  margin-bottom: 5px;
+}
+
+.benefits__subtitle-inner {
+  max-width: 245px;
+  font-family: "century gothic";
+  font-size: 16px;
+  color: #373737;
+  font-weight: bold;
+}
+
+.benefits__item--wrap {
+  translate: -70px 28px;
+}
+
+.benefits__icon-wrap {
+  margin-bottom: 5px;
+}
+
+.benefits__subtitle-wrap {
+  max-width: 185px;
+  font-family: "century gothic";
+  font-size: 16px;
+  color: #373737;
+  font-weight: bold;
+}
+
+.benefits__item--quote {
+  margin: 0 auto;
+  translate: -8px -35px;
+}
+
+.benefits__icon-quote {
+  margin-bottom: 20px;
+}
+
+.benefits__subtitle-quote,
+.benefits__text-quote {
+  max-width: 285px;
+  font-family: "century gothic";
+  font-size: 16px;
+  color: #373737;
+}
+
+.benefits__subtitle-quote {
+  font-weight: bold;
+}
+
+/* Футер */
+
+.footer {
+  background-color: #07090c;
+  padding: 22px 0;
+}
+
+.footer__img {
+  display: block;
+  text-align: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer__logo {
+  width: 197px;
+}
+
+
+
+
+
+/* Адаптация */
+
+/* main-block */
+
+@media screen and (max-width: 800px) {
+  .conteiner {
+    max-width: 770px;
+    margin: 0 25px;
+  }
+
+  .main-block__title {
+    margin: 322px 0 0 440px;
+  }
+
+  .header {
+    display: block;
+    text-align: center;
+  }
+
+  .header__list {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .conteiner {
+    margin: 0 10px;
+  }
+
+  .header__logo {
+    max-width: 180px;
+    margin-bottom: -5px;
+  }
+
+  .header__nav {
+    margin-bottom: 120px;
+  }
+
+  .header__list {
+    justify-content: space-around;
+  }
+
+  .header__li:not(:last-child) {
+    margin: 0px;
+  }
+
+  .header__link {
+    font-size: 12px;
+  }
+
+  .main-block {
+    padding: 25px 0 85px 0;
+  }
+
+  .main-block__title {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+    line-height: 45px;
+  }
+}
+
+/* aboutUs */
+
+@media screen and (max-width: 1024px) {
+  .aboutUs {
+    padding: 75px 0 130px 0;
+  }
+
+  .conteiner__aboutUs {
+    max-width: 980px;
+    margin: 0 25px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .aboutUs__item {
+    margin: 0 auto;
+  }
+
+  .aboutUs__quote {
+    display: block;
+    text-align: center;
+    margin: 0 0 40px 0;
+  }
+
+  .aboutUs__text {
+    text-align: center;
+  }
+
+  .aboutUs__subtitle {
+    margin-bottom: 50px;
+  }
+
+  .aboutUs__title {
+    margin: 0 0px 0px 340px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .conteiner__aboutUs {
+    margin: 0 10px;
+  }
+
+  .aboutUs {
+    padding: 25px 0 0 0;
+  }
+
+  .aboutUs__subtitle {
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0px;
+    margin-bottom: 40px;
+  }
+
+  .aboutUs__block {
+    flex-direction: column;
+  }
+
+  .aboutUs__quote {
+    display: flex;
+    margin: 0px 0 35px 0;
+  }
+
+  .aboutUs__icon {
+    max-width: 25px;
+    margin-right: 15px;
+  }
+
+  .aboutUs__text {
+    text-align: left;
+    font-size: 10px;
+    line-height: 12px;
+    align-items: center;
+  }
+
+  .aboutUs__title {
+    max-width: 280px;
+    font-size: 65px;
+    line-height: 100px;
+    letter-spacing: 0px;
+    margin: 0;
+  }
+
+  .aboutUs__title--word {
+    font-size: 65px;
+  }
+}
+
+/* public */
+
+@media screen and (max-width: 1024px) {
+  .public {
+    padding: 85px 0 125px 0;
+  }
+
+  .conteiner__public {
+    max-width: 1100px;
+    margin: 0 15px 0 15px;
+  }
+
+  .public__title {
+    margin-left: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .conteiner__public {
+    display: block;
+    text-align: center;
+  }
+
+  .public {
+    padding: 75px 0 100px 0;
+  }
+
+  .public__img {
+    margin-right: 0;
+  }
+
+  .public__logo {
+    margin: 0px 0 50px 0;
+  }
+
+  .public__title {
+    margin-left: 0;
+    margin: 0 auto;
+  }
+
+  .public__item {
+    max-width: 500px;
+    margin: 25px auto 0;
+  }
+
+  .public__text {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .public {
+    padding: 30px 0 35px 0;
+  }
+
+  .conteiner__public {
+    margin: 0 10px;
+  }
+
+  .public__logo {
+    max-width: 150px;
+    margin: 0;
+  }
+
+  .public__title {
+    font-size: 70px;
+    line-height: 85px;
+  }
+
+  .public__title--word {
+    font-size: 105px;
+    line-height: 0;
+  }
+
+  .public__item {
+    max-width: 270px;
+    margin: 10px auto 0;
+  }
+
+  .public__quote {
+    margin-bottom: 15px;
+  }
+
+  .public__text {
+    font-size: 12px;
+  }
+}
+
+/* benefits */
+
+@media screen and (max-width: 1024px) {
+  .conteiner__benefits {
+    max-width: 1100px;
+    margin: 0 25px;
+  }
+
+  .benefits__flex {
+    justify-content: space-around;
+  }
+
+  .benefits__text-lead {
+    max-width: 200px;
+  }
+
+  .benefits__text-text {
+    max-width: 185px;
+  }
+
+  .benefits__subtitle-text {
+    max-width: 185px;
+  }
+
+  .benefits__item--text {
+    translate: 132px;
+  }
+
+  .benefits__item--copy {
+    translate: -75px -25px;
+  }
+
+  .benefits__item--desc {
+    translate: 150px;
+  }
+
+  .benefits__text-desc {
+    max-width: 270px;
+  }
+
+  .benefits__item--inner {
+    translate: 5px -25px;
+  }
+
+  .benefits__item--wrap {
+    translate: -65px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .benefits {
+    padding: 40px 0 70px 0;
+  }
+
+  .benefits__title {
+    font-size: 95px;
+  }
+
+  .benefits__block {
+    display: block;
+  }
+
+  .benefits__flex {
+    justify-content: center;
+  }
+
+  .benefits__cont {
+    justify-content: center;
+  }
+
+  .benefits__item--quote {
+    display: none;
+  }
+
+  .benefits__item--lead {
+    text-align: center;
+    translate: -150px;
+  }
+
+  .benefits__icon-lead {
+    text-align: center;
+    translate: 0;
+  }
+
+  .benefits__subtitle-lead,
+  .benefits__text-lead {
+    text-align: center;
+  }
+
+  .benefits__item--text {
+    translate: 170px;
+    text-align: center;
+  }
+
+  .benefits__icon-text {
+    translate: 0;
+    text-align: center;
+  }
+
+  .benefits__subtitle-text,
+  .benefits__text-text {
+    max-width: 220px;
+  }
+
+  .benefits__item--copy {
+    translate: -135px;
+
+  }
+
+  .benefits__item--desc {
+    translate: 165px;
+    text-align: center;
+  }
+
+  .benefits__icon-desc {
+    translate: 0;
+  }
+
+  .benefits__subtitle-desc,
+  .benefits__text-desc {
+    max-width: 230px;
+  }
+
+  .benefits__end {
+    margin-top: 20px;
+  }
+
+  .benefits__item--inner {
+    translate: -5px -25px;
+  }
+
+  .benefits__item--wrap {
+    translate: -47px -10px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .benefits {
+    padding: 30px 0 40px 0;
+    background: none;
+  }
+
+  .conteiner__benefits {
+    margin: 0 10px;
+  }
+
+  .benefits__title {
+    font-size: 55px;
+    line-height: 45px;
+  }
+
+
+  .benefits__item--lead,
+  .benefits__item--copy,
+  .benefits__item--inner,
+  .benefits__item--wrap {
+    margin-bottom: 25px;
+  }
+
+
+
+  .benefits__icon-lead,
+  .benefits__icon-text,
+  .benefits__icon-copy,
+  .benefits__icon-desc,
+  .benefits__icon-inner,
+  .benefits__icon-wrap,
+  .benefits__icon-quote {
+    margin-bottom: 15px;
+  }
+
+  .benefits__flex,
+  .benefits__cont,
+  .benefits__end {
+    flex-direction: column;
+  }
+
+  .benefits__item--lead,
+  .benefits__item--text,
+  .benefits__item--copy,
+  .benefits__item--desc,
+  .benefits__item--wrap,
+  .benefits__item--inner,
+  .benefits__item--quote {
+    translate: 0;
+  }
+
+  .benefits__subtitle-lead,
+  .benefits__text-lead,
+  .benefits__subtitle-text,
+  .benefits__text-text,
+  .benefits__item--desc,
+  .benefits__subtitle-wrap,
+  .benefits__subtitle-copy,
+  .benefits__subtitle-inner,
+  .benefits__subtitle-desc,
+  .benefits__text-desc,
+  .benefits__subtitle-quote,
+  .benefits__text-quote {
+    margin: 0 auto;
+    font-size: 12px;
+  }
+
+  .benefits__item--quote {
+    display: block;
+  }
+
+}
+
+/* contacts */
+
+@media screen and (max-width: 800px) {
+  .contacts__block {
+    margin: 0 auto;
+  }
+
+  .contacts__title,
+  .contacts__subtitle,
+  .contacts__telephone {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .contacts {
+    padding: 30px 0 155px 0;
+  }
+
+  .contacts__block {
+    max-width: 190px;
+  }
+
+  .contacts__title,
+  .contacts__subtitle,
+  .contacts__telephone {
+    font-size: 12px;
+    line-height: 12px;
+    margin-bottom: 10px;
+  }
+}
+
+/* footer */
+
+@media screen and (max-width: 320px) {
+  .footer {
+    padding: 10px 0;
+  }
+
+  .footer__logo {
+    max-width: 120px;
+  }
+}
