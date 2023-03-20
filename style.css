@@ -8,7 +8,9 @@
 }
 
 /* Общие стили */
-
+html, body {
+  overflow-x:hidden;
+}
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -20,6 +22,7 @@
 
 .wrapper {
   max-width: 1920px;
+  overflow: hidden;
 }
 
 .conteiner {
@@ -96,6 +99,7 @@
   text-align: right;
   color: #FAFAFA;
   margin: 323px 0 0 579px;
+  word-break: break-all;
 }
 
 /* Хедер */
@@ -137,7 +141,6 @@
   line-height: 46.02px;
   text-align: right;
   text-decoration: none;
-  /* background: rgba(150, 150, 150, 0.589); */
 }
 .header__link:hover{
   color: red;
@@ -285,7 +288,23 @@
   letter-spacing: normal;
   line-height: 24px;
   text-align: left;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+}
+
+.contact__link {
+  color: rgb(42, 41, 42);
+  font-family: "Century Gothic";
+  font-size: 21px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 46px;
+  text-align: right;
+  text-decoration: underline;
+}
+.contact__link:hover{
+  color: red;
+  font-weight: 700;
 }
 
 /* Пятая секция */
@@ -526,7 +545,7 @@
   }
 
   .header__li:not(:last-child) {
-    margin-right: 55px;
+    margin-right: 50px;
   }
 
   .main-block__title {
