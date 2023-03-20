@@ -624,7 +624,7 @@
   }
 
   .aboutUs__title {
-    margin: 0 0px 0px 340px;
+    display: none;
   }
 }
 
