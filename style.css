@@ -87,7 +87,7 @@ html, body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 40px 0 220px 0;
+  padding: 30px 0 220px 0;
 }
 
 .main-block__title {
@@ -99,7 +99,6 @@ html, body {
   text-align: right;
   color: #FAFAFA;
   margin: 323px 0 0 579px;
-  word-break: break-all;
 }
 
 /* Хедер */
@@ -114,6 +113,10 @@ html, body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.header__logo {
+    width: 300px;
 }
 
 .header__list {
